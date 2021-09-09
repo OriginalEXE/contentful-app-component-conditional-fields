@@ -55,6 +55,7 @@ const CustomField = (props: FieldProps) => {
   // Code editor
   const codeSnippetValue = useMemo(() => {
     return sdk.entry.fields.codeSnippet.getValue();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [componentType]);
 
   return (
